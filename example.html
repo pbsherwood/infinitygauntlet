@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<!-- Imports -->
+		<link rel="stylesheet" href="src/infinity.css">
+		<link rel="stylesheet" type="text/css" href="src/particles/css/particles.css">
+		
+		<!-- Mock-up layout for example -->
+		<style>
+			#main_elements > div {
+				min-width: 200px;
+				min-height: 200px;
+				margin: 10px;
+				position: relative;
+			}
+			.element1 {
+				background-color: red;
+			}
+			.element2 {
+				background-color: blue;
+			}
+			.element3 {
+				background-color: green;
+			}
+			.element4 {
+				background-color: purple;
+			}
+			.element5 {
+				background-color: brown;
+			}
+			.element6 {
+				background-color: grey;
+			}
+			.element7 {
+				background-color: black;
+			}
+			.element8 {
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+	
+		<!-- Structure -->
+		<div id='main_gauntlet'></div>
+		
+		<div id='main_elements'>
+			<div class='element1'></div>
+			<div class='element2'></div>
+			<div class='element3'></div>
+			<div class='element4'></div>
+			<div class='element5'></div>
+			<div class='element6'></div>
+			<div class='element7'></div>
+			<div class='element8'></div>
+		</div>
+		
+	
+		<!-- Imports -->
+		<script type="text/javascript" src="src/particles/js/anime.min.js"></script>
+		<script type="text/javascript" src="src/particles/js/particles.js"></script>
+		<script src="src/infinity.js"></script>
+		
+		<!-- Dependency -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+		
+		<!-- Example -->
+		<script>
+			elements_dictionary = {
+				".element1":["top_left", "top_right", "bottom_right"],
+				".element2":["bottom_right", "bottom_left"],
+				".element3":["top_left", "bottom_right"],
+				".element4":["top_left", "bottom_right"],
+				".element5":["top_left", "top_right", "bottom_right"],
+				".element6":["bottom_right"],
+				".element7":["top_left"],
+				".element8":["top_left", "bottom_right"]
+			}
+			var gauntlet = new InfinityGauntlet("#main_gauntlet", elements_dictionary);
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,55 @@
+/* -------------------------------------------------------*/
+:root {
+    --contrast-1: #333;                             	/* Dark */
+    --contrast-2: white;                          		/* Light */
+
+	--main-color: #5c0100;                     			/* Should contrast --main-font-color */
+	--background-color: var(--contrast-1); 				/* Should contrast --secondary-font-color AND --plain-font-color */
+	--accent-color: #ac1b2a;
+	--important-color: #ac1b2a;
+
+	--main-font-color: var(--contrast-2);               /* Should contrast --main-color */
+    --secondary-font-color: var(--contrast-2);          /* Should contrast --background-color */
+	--plain-font-color: #AFAFAF;                        /* Should contrast --background-color */
+}
+/* -------------------------------------------------------*/
+#infinity_gauntlet {
+    /*position: absolute;
+    right: 0px;
+    top: 0px;*/
+    cursor: pointer;
+    z-index: 100;
+    display: inline-block;
+    background-size: 100% !important;
+    margin-right: 5px;
+}
+#infinity_gauntlet > img {
+    height: 65px;
+}
+.infinity_stone {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1000;
+}
+.infinity_stone_top_left {
+    left: 0px;
+    top: 0px;
+}
+.infinity_stone_top_right {
+    right: 0px;
+    top: 0px;
+}
+.infinity_stone_bottom_right {
+    right: 0px;
+    bottom: 0px;
+}
+.infinity_stone_bottom_left {
+    left: 0px;
+    bottom: 0px;
+}
+.infinity_stone > img {
+    width: 15px
+}
+.asset_info_div, .asset_actions_div, .asset_assignment_div, .asset_comments_div, .scene_info_div, .scene_actions_div, .scene_assets_div, .scene_comments_div {
+    position: relative;
+}
